@@ -5,7 +5,7 @@ let deleteBtn = document.getElementById('delete-btn')
 let ulEl = document.getElementById('ul-el')
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem('storedURL'))
 
-// If we exit browser although localStorage will have data urlARR var will clear so if localStorage is true the reassign its value to urlArr
+// If we exit browser although localStorage will have data urlARR var will clear so if localStorage is true then reassign its value to urlArr
 if (leadsFromLocalStorage) {
     urlArr = leadsFromLocalStorage
     renderLeads(urlArr)
